@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <header class="mainheader">
+        <div class="logo">
+            <h1 class="in-titl">UnityPulse</h1>
+        </div>
+        <div class="slider-container">
+            <div class="slider fade">
+                <img src="pics\44453.jpg" alt="Image 1">
+            </div>
+        </div>
+    </header>
+    <nav class="menu-in">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="services-dropdown">
+                <a href="#">Services</a>
+                <div class="services-dropdown-content">
+                    <!-- Place the services slider code here -->
+                    <div class="services-slider">
+                        <!-- Service slides go here -->
+                    </div>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="login-register"><a id="l-r-link" href="avatars.html">Log In / Register</a></li>
+        </ul>
+        <script>
+                    // JavaScript to toggle the popup
+        const popupContainer = document.getElementById('popup-container');
+        const closePopup = document.getElementById('close-popup');
+        const loginRegisterLink = document.getElementById('l-r-link');
+
+        function togglePopup() {
+            popupContainer.style.display = 'block';
+        }
+
+        function closePopupWindow() {
+            popupContainer.style.display = 'none';
+        }
+
+        loginRegisterLink.addEventListener('click', togglePopup);
+        closePopup.addEventListener('click', closePopupWindow);
+
+        </script>
+    </nav>
+    <div class="container_contact" >
+        <div class="contact-index">
+            <form id="contactForm" onsubmit="submitForm(); return false;" action="#">
+                <label for="fname" style="font-size: large;">First Name</label>
+                <input type="text"id="fname" name="firstname" placeholder="Your name..." class="inputs_contactw">
+                <label for="lname" style="font-size: large;">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..." class="inputs_contactw">
+                <label for="eadress" style="font-size: large;">E-mail adress</label>
+                <input class="inputs_contactw" type="text" id="eadress" name="emailadress"  placeholder="Your email address...">
+                <label for="country" style="font-size: large;">Country</label>
+                <select id="country" name="country" class="inputs_contactw">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="norway">Norway</option>
+                <option value="italia">Italia</option>
+                <option value="russia">Russia</option>
+                <option value="montenegro">Montenegro</option>
+                <option value="serbia">Serbia</option>
+                <option value="bosnia">Bosnia and Herzegovinia</option>
+                <option value="croatia">Croatia</option>
+                <option value="ukraina">Ukraina</option>
+                <option value="unitedkingdom">United Kingdom</option>
+                <option value="nmacedonia">North Macedonia</option>
+                <option value="albania">Albania</option>
+                <option value="slovenia">Slovenia</option>
+                <option value="czhech">Czhech Republic</option>
+                <option value=" sweden">Sweden</option>
+                <option value="denmark">Denmark</option>
+                <option value="finland">Finland</option>
+                <option value="germany">Germany</option>
+                <option value="poland">Poland</option>
+                </select>
+                <label for="subject" style="font-size: large;">Subject</label>
+                <textarea id="subject" name="subject" placeholder="YOUR MESSAGE..." class="inputs_contactw"></textarea>
+                <input type="submit" value="Submit">
+                <script> 
+                function submitForm() {
+                    var form = document.getElementById("contactForm");
+                    var name = form.elements["firstname"].value + " " + form.elements["lastname"].value;
+                    var email = "mihailokoprivica480@gmail.com";
+                    var subject = "New message from " + name;
+                    var country = form.elements["country"].value;
+                    var emailFrom = form.elements["emailadress"].value;
+                    var message = form.elements["subject"].value;
+                    
+                    var emailBody = `Name: ${name}\n
+                    Email: ${emailFrom}\n
+                    Country: ${country}\n
+                    Message: ${message}`;
+                    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+                    }
+                </script>
+            </form>
+        </div>
+    </div>
+ <footer>
+    <div class="footer-container">
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Email: <br> mihailokoprivica480@gmail.com</p>
+            <p>Phone: <br> (+47) 973 26 424</p>
+            <p>Address: <br> Sinsenterrassen 14, 0574 Oslo, Norway
+            </p>
+        </div>
+        <div class="footer-designer">
+            <h4>Designed by</h4>
+            <p>Mihailo Koprivica</p>
+        </div>
+        <div class="footer-links">
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="#">Weather</a></li>
+                <li><a href="#">Sports News</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>   
+</body>
+
+</html>

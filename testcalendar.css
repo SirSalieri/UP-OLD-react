@@ -1,0 +1,175 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.calendar_body{
+  padding: 0 10px;
+  min-height: 100vh;
+  background: #f2f2f2;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: center; /* Add this line */
+  align-items: center;
+  padding: 10px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li.login-register {
+  margin-left: 0 auto;
+}
+
+.w-div {
+  display: flex;
+  position: center;
+}
+.wrapper{
+  width: 450px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+header .icons{
+  display: flex;
+}
+header .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.calendar{
+  padding: 20px;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days{
+  margin-bottom: 20px;
+}
+.calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive{
+  color: #aaa;
+}
+.days li.active{
+  color: #fff;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.days li.active::before{
+  background: #9B59B6;
+}
+.days li:not(.active):hover::before{
+  background: #f2f2f2;
+}
+
+/* CSS Styles for the Footer */
+footer {
+  background-color: #333;
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  list-style: none;
+}
+
+
+.footer-contact h4, .footer-designer h4, .footer-links h4 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-contact p, .footer-designer p {
+  color: #ccc;
+  font-size: 1.3rem;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  font-weight: bold;
+  list-style: none;
+}
+
+.foot-ul, .foot-li, a:hover {
+  text-decoration: underline;
+  list-style: none;
+}
+

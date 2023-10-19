@@ -1,0 +1,360 @@
+body, h1, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.mainheader {
+    background-image: url('pics\44453.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+}
+
+.logo {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(163, 109, 109, 0.8);
+    border-radius: 5px;
+}
+
+/* Add some basic styles for content */
+.in-container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center; /* Add this line */
+    align-items: center;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li.login-register {
+    margin-left: 0 auto;
+}
+
+/* CSS Styles for the Services Dropdown */
+.services-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.services-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.services-dropdown:hover .services-dropdown-content {
+    display: block;
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 10px;
+}
+
+#register-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#register-link:hover {
+    text-decoration: underline;
+}
+
+
+
+.slider-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -111; 
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.news {
+    flex: 1;
+    max-width: calc(33.3333% - 20px);
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news img {
+    max-width: 100%;
+    height: auto;
+}
+
+.news h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.news p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.news a {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF; /* Adjust the link color */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.news a:hover {
+    color: #0056b3; /* Adjust the link color on hover */
+}
+
+/* CSS Styles for the Footer */
+footer {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+.footer-contact h4, .footer-designer h4, .footer-links h4 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-contact p, .footer-designer p {
+    color: #ccc;
+    font-size: 1.3rem;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.foot-ul, .foot-li, a:hover {
+    text-decoration: underline;
+    list-style: none;
+}
+
+/* _contactpage */
+
+.container_contact {
+    margin: 20px;
+}
+.contact-index {
+    display: grid;
+    background-color: rgb(118, 243, 201, 0.6);
+    border: 3px rgb(0, 0, 0) solid;
+    width: 100%;
+    max-width: 500px;
+    height: fit-content;
+    border-radius: 44px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center; /* Change this line to center horizontally and vertically */
+}
+
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 17px;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+
+input[type=submit] {
+background-color: white;
+color: rgb(0, 0, 0);
+border-radius: 17px;
+padding: 12px 20px;
+cursor: pointer;
+transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+input[type=submit]:hover {
+background-color: red;
+color: white;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.inputs_contactw {
+    font-size: large;
+}
+.inputs_contactw:hover {
+    border:rgb(0, 0, 0) solid 4px;
+    background-color: #b6bace;
+    color: white;
+    font-style: bold;
+}
+
+/* about page */
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content-item {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+.content-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.a-title {
+    background-color: rgb(255, 255, 255, 0.4);
+    color: #000000;
+    text-align: center; 
+    font-size: 32px; 
+    text-transform: uppercase; 
+    border-bottom: 5px solid #f1ff72;
+    padding: 10px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.h-text {
+    background-color: #ccc;
+    color: #000000;
+    width: 67%;
+    padding: 15px; 
+    border-radius: 10px; 
+    text-align: center; 
+    font: 1.7rem bold;
+    border-top: 5px solid #f1ff72;
+    border-bottom: 5px solid #f1ff72;
+}
